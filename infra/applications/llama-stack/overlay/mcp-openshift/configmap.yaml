@@ -76,6 +76,10 @@ data:
       - name: builtin::websearch
         enabled: true
     tool_groups:
+    - toolgroup_id: mcp::github
+      provider_id: model-context-protocol
+      mcp_endpoint:
+        uri: http://github-mcp-server.agent-demo.svc.cluster.local:80/sse
     - provider_id: tavily-search
       toolgroup_id: builtin::websearch
     - toolgroup_id: mcp::openshift
